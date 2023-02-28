@@ -23,6 +23,12 @@ namespace ReactAdvantage.Domain.Models
         public virtual Tenant Tenant { get; set; }
 
         public virtual ICollection<UserRole> UserRoles { get; set; }
+        
+        public bool IsNone { get; set; }
+
+        public int? IsTenant { get; set; }
+
+        public virtual Teurn Teurn { get; set; }
 
         public void UpdateValuesFrom(Role role)
         {
